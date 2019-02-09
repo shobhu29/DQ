@@ -1,0 +1,181 @@
+1.
+Memory deallocation in java is done by? 
+1). Programmer
+2). Operating system
+3). Garbage collector
+4). None of the above
+
+Solution :
+option [3] is correct
+
+2.
+ public class test {         
+                            
+    static void methodA(short s) {
+     System.out.println("methodA(short) called");
+    }
+
+    static void methodA(int i) {
+     System.out.println("methodA(int) called");
+    }
+                         
+                       
+    static void methodB(float f) {
+    System.out.println("methodB(float) called");
+    }
+
+    static void methodB(double d) {
+    System.out.println("methodB(double) called");
+    }
+                         
+    public static void main(String args[]) {
+                           
+    methodA(5);                                                 
+    methodB(5.2);
+
+    }
+} 
+
+1). methodA(short) called
+2). methodA(int) called
+3). Exception
+4). Compilation Error
+Solution :
+option [2] is correct
+
+3.
+
+Given the following code fragment:
+
+ XXXX  choice ; // variable choice is declared and initialized here
+ switch( choice ) {
+   case 100 : System.out.println("One hundred");break ;
+   case 20 : System.out.println("Twenty");break ;
+   case 30 : System.out.println("Thirty");break ;
+ }
+
+Choose the declarations of choice which will not cause a compiler error.       
+1). byte choice = 100 ;
+2). short choice = 100 ;
+3). int choice = 300 ;
+4). All of the above
+
+Solution :
+option [4] is correct
+
+4.
+
+When access modifier is omitted from the definition of the member of a class. The member has?
+1). default access
+2). public access
+3). private access 
+4). protected access
+Solution :
+option [1] is correct
+
+5.
+
+ Given:
+1. public class Demo {
+2. public static void main (String[] args) {
+3. byte var1 = 127;
+4. byte var2 = 126;
+5. byte result = var1 + var2;
+6. }
+7. }
+
+Which statement is true?
+1). Compilation succeeds and d takes the value 253.
+2). Line 5 contains an error that prevents compilation.
+3). Line 5 throws an exception indicating "Out of range"
+4). Line 3 and 4 contain errors that prevent compilation.
+Solution :
+option [2] is correct
+
+6.
+Given:
+   float result;
+   result=5/2;
+   System.out.println(result);
+
+What will be the output?
+1). 2
+2). 2.0
+3). 2.5
+4). error
+Solution :
+option [2] is correct
+
+7.
+What all gets printed when the following code is compiled and run? 
+Select the correct answers:
+
+public class Test {
+   public static void main(String args[]) 
+{
+      for(int i = 0; i < 2; i++) 
+{
+         for(int j = 2; j>= 0; j--) 
+{
+            if(i == j) break;
+           System.out.println("i=" + i + " j="+j);
+         }
+      }
+   }
+} 
+
+1. i=0 j=0 
+2. i=0 j=1 
+3. i=0 j=2 
+4. i=1 j=0 
+5. i=1 j=1 
+6. i=1 j=2
+1). 1,3,5
+2). 2,4,6
+3). 1,2,5
+4). 3,2,6
+Solution :
+option [4] is correct
+
+8.
+
+Which of the following are features of Java Programming Language?
+1). Robust
+2). Multithreaded
+3). Interpreted
+4). All of the above
+Solution :
+option [4] is correct
+
+9.
+
+What is true about the following code?        
+
+1. enum EnumDemo { A }
+2. class Test {
+3. enum EnumD { B }
+4. void my_method() {
+5. enum EnumC { D }
+6. } } 
+1). The code compiles without any error
+2). The code compiles if we remove line number 1
+3). The code compiles if we remove line number 5
+4). None of the above is correct 
+Solution :
+option [3] is correct
+
+10.
+
+Which of the following statements are true?
+1). No arg constructor is allways supplied by the Compiler
+2). Constructors cannot be overloaded
+3). Constructors cannot have return type.
+4). Constructors can be static
+Solution :
+option [3] is correct
+
+
+
+
+
+
