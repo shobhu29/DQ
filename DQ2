@@ -1,0 +1,154 @@
+1.
+What will happen when you attempt to compile and run the following class?      
+
+class Base{
+Base(int var)
+{
+    System.out.println("Base");
+}
+}
+class Test extends Base{
+public static void main(String argv[]){
+        Test obj = new Test();
+}
+}
+1).  Compiles without any problem
+2).  Compiles and produces output "Base"
+3). Generates Compile time error
+4). None of the above
+Solution :
+option [3] is correct
+
+2.
+Which of the given syntax is correct to display  date-time with the time zone in the ISO-8601 calendar system, such as 2007-12-03T10:15:30+01:00 Europe/Paris. 
+Assume the zone is Asia/kolkata.
+1). ZonedDateTime objt = ZonedDateTime.of(LocalDateTime.now(), ZoneId.of("Asia/Kolkata"));
+2). LocalDate date = LocalDate.now(ZoneId.of("Asia/Kolkata"));
+3). ZonedDateTime time = new ZonedDateTime("Asia/Kolkata");
+4). ZonedDateTime time = new ZonedDateTime.of("Asia/Kolkata");
+Solution :
+option [1] is correct
+
+3.
+Which of the given LocalDate class method is used to obtain current date?
+1). now()
+2). parse()
+3). format()
+4). newInstance()
+Solution :
+option [1] is correct
+
+4.
+ class Shape
+{
+final public double calArea(){}
+}
+public class Circle extends Shape
+{
+int radius;
+public Circle(int radius){
+this.radius = radius;
+}
+public double calArea(){
+return 3.142*radius*radius;
+}
+public static void main(String []args){
+Shape obj = new Circle(5);
+System.out.println(obj.calArea());
+}
+}What will be the output of above code?
+1). It will display area of circle with radius 5
+2). no output
+3). compilation error
+4). runtime Exception
+Solution :
+option [3] is correct
+
+5.
+Which of the following are Object class methods?
+1). toString()
+2). equals()
+3). hashCode()
+4). All of the above
+Solution :
+option [4] is correct
+
+6.
+class Employee
+{
+String name;
+int id;
+public Employee(String name,int id)
+{
+this.name = name;
+this.id=id;
+}
+}
+public class Manager extends Employee
+{
+public static void main(String []args)
+{
+Manager mgr = new Manager();
+}
+}
+What will happen after execution of above code?
+1). Manager class object will be successfully created 
+2). compile time error as there is no default constructor in class Employee
+3). Manager object will be successfully created after implementing default constructor in Manager class
+4). Default constructor need to be implemented in both classes for successful creation of Manager class object
+Solution :
+option [2] is correct
+
+7.
+The Scanner class is found in  ______ package.
+1). java.lang
+2). java.util
+3). java.io
+4). None of the above
+Solution :
+option [2] is correct
+
+8.
+class Demo
+{}
+public class SubDemo extends Demo
+{
+public static void main(String []args){
+Demo obj = new SubDemo();
+System.out.println(obj instanceof Demo);}
+}What will be the output of above code?
+1). FALSE
+2). TRUE
+3). Demo
+4). SubDemo
+Solution :
+option [2] is correct
+
+9.
+What will be the output of the following code snippet?         '
+
+String str1 = new String( "hello" );
+String str2 = "hello";
+         if  (str1==str2) 
+           System.out.println( "Equals");
+        else
+           System.out.println( "Not Equal");
+1). Equal
+2). Not Equal
+3). Compilation error
+4). None of the above
+Solution :
+option [2] is correct
+
+10.
+Integer var1 = new Integer(2); 
+Integer var2 = new Integer(2); 
+
+What happens when you do if (var1==var2)?  
+1). 'TRUE
+2). 'FALSE
+3). compilation error
+4). runtime Exception
+Solution :
+option [2] is correct
+
